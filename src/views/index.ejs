@@ -1,0 +1,35 @@
+<%- include('partials/head', {styles : ['stylesINDEX']}) %>
+<body>
+    <%- include('partials/header') %>
+    <section class="banner"> <!--son 3 imagenes deslizables-->
+        <img src="/images/Banner-promo1.png" alt="Banner de ofertas">
+    </section>
+    <main>
+        <section>
+            <h3>Ofertas</h3>
+            <section class="bestsellers">
+                <% inSale && inSale.forEach((product) => { %>
+                    <div class="products">
+                        <article>
+                            <img src="../images/products/<%= product.image %>" alt="imagen" class="product_img">
+                            <div class="main-article">
+                                <h4 class="name"><%=product.name%></h4>
+                                <p class="price">
+                                    <a href="/products/detail/<%= product.id %>">
+                                        <i class="fas fa-info-circle fa-lg"></i>
+                                    </a> Desde $ <%= product.price %>
+                                    <i class="fas fa-cart-plus fa-lg"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>   
+                <% }) %>
+            </section>
+        </section>
+        <div class="button-box">
+            <a href="/products"><button type="submit" class="btn-products">Ver todos los productos</button></a>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

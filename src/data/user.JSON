@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name": "Juan",
+    "lastname": "Lopez",
+    "age": 60,
+    "user": "admin",
+    "email": "juan.lopez@gmail.com",
+    "password": "1234",
+    "image": ".png"
+  },
+  {
+    "id": 2,
+    "name": "Franco",
+    "lastname": "Gonzalez",
+    "age": 18,
+    "user": "admin",
+    "email": "franco.gonzalez@gmail.com",
+    "password": "2345",
+    "image": ".png"
+  },
+  {
+    "id": 3,
+    "name": "Maria Eugenia",
+    "lastname": "Alvado",
+    "age": 30,
+    "user": "admin",
+    "email": "maria.alvado@gmail.com",
+    "password": "4444",
+    "image": ".png"
+  },
+  {
+    "id": 4,
+    "name": "Lautaro",
+    "lastname": "Darin",
+    "age": 28,
+    "image": ".png",
+    "user": "cliente",
+    "email": "lautaro.darin@gmail.com",
+    "password": "6662"
+  },
+  {
+    "id": 5,
+    "name": "Sofia",
+    "lastname": "Fabbiani",
+    "age": 39,
+    "user": "cliente",
+    "email": "sofia.fabbiani@gmail.com",
+    "image": ".png",
+    "password": "3662"
+  },
+  {
+    "id": 6,
+    "name": "Laura",
+    "lastname": "Pacheco",
+    "age": 25,
+    "user": "cliente",
+    "email": "laura.pacheco@gmail.com",
+    "password": "9921",
+    "image": ".png"
+  },
+  {
+    "id": 7,
+    "name": "Abril Genoveva Ramos Dietmair ",
+    "username": "abril45",
+    "email": "abrilramos7@hotmail.com",
+    "birth_date": "2002-01-19",
+    "country": "Argentina",
+    "province": "Cordoba",
+    "city": "Maria Juana",
+    "gender": "Femenino",
+    "interests": "Plantas",
+    "password": "$2b$10$nw.ghhp.bC.S1emF3386Ae2M0iEk.5DGUhgUa4MYcdGv2MpGC.Vt6",
+    "pass_confirm": "12345",
+    "image": "default-image.png"
+  },
+  {
+    "id": 8,
+    "name": "agustina",
+    "username": "agus8",
+    "email": "agus23@hotmail.com",
+    "birth_date": "2001-01-12",
+    "country": "Argentina",
+    "province": "Santa Fe",
+    "city": "Ceres",
+    "gender": "Femenino",
+    "interests": [
+      "Semillas",
+      "Herramientas"
+    ],
+    "password": "$2b$10$kBHcnh5rCnf20OG6B0VGhenKfEOPpeZj1M/mpU6RkITJCNjh6Xzgq",
+    "pass_confirm": "agus1234",
+    "image": "default-image.png"
+  }
+]

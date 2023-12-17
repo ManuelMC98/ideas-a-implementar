@@ -1,0 +1,55 @@
+<%- include('partials/head', {styles : ['productCreate']}) %>
+
+<body>
+    <div class="logo-btn">
+        <img src="/images/Logo-verde.png" alt="Logo">
+    </div>
+    <div class="wrapper">
+        <form action="/products/<%= productToEdit.id %>/edit?_method=PUT" method="post" enctype="multipart/form-data">
+            <h1>Modificar Producto</h1>
+
+            <div class="input-box">
+                <label for="name" class="form-label">Nombre del producto:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre del producto" value="<%= productToEdit.name %>" required>
+            </div>
+
+            <div class="input-box">
+                <label for="description" class="form-label">Descripción:</label>
+                <textarea name="description" id="description" placeholder="Descripción del producto" required><%= productToEdit.description %></textarea>
+            </div>
+
+            <div class="input-box">
+                <label for="price" class="form-label">Precio del producto:</label>
+                <input type="text" id="price" name="price" placeholder="Precio del producto" value="<%= productToEdit.price %>" required>
+            </div>
+
+            <div class="input-box">
+                <label for="discount" class="form-label">Descuento:</label>
+                <input type="text" id="discount" name="discount" placeholder="Descuento a aplicar" value="<%= productToEdit.discount %>" required>
+            </div>
+
+            <div class="input-box">
+                <label for="category" class="form-label">Seleccione categoría:</label>
+                <select name="category" id="category">
+                    <option value="" disabled>Elegir</option>
+                    <option value="semillas" <%= productToEdit.category === 'semillas' ? 'selected' : '' %>>Semillas</option>
+                    <!-- (Otras opciones) -->
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="image" class="form-label">Cambiar imagen del producto:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                <img src="/images/products/<%= productToEdit.image %>" alt="Imagen actual" class="current-image">
+            </div>
+
+            <div class="input-box">
+                <label for="sale" class="form-label">¿Está en oferta?</label>
+                <input type="text" id="sale" name="sale" placeholder="¿Está en oferta?" value="<%= productToEdit.sale %>" required>
+            </div>
+
+            <button type="submit" class="btn">Guardar Cambios</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<%- include('partials/head', {styles : ['productCreate']}) %>
+<body>
+    <div class="logo-btn">
+        <img src="/images/Logo-verde.png" alt="Logo">
+    </div>
+    <div class="wrapper">
+        <form action="/products/create" method="POST" enctype="multipart/form-data">
+            <h1>Agregar productos</h1>
+
+            <div class="input-box">
+                <label for="name">Nombre del producto:</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese el nombre" required>
+            </div>
+
+            <div class="input-box">
+                <label for="description">Descripción del producto:</label>
+                <textarea name="description" id="description" placeholder="Ingrese la descripción" required></textarea>
+            </div>
+
+            <div class="input-box">
+                <label for="price">Precio del producto:</label>
+                <input type="number" id="price" name="price" placeholder="Ingrese el precio" required>
+            </div>
+
+            <div class="input-box">
+                <label for="discount">Descuento a aplicar (%):</label>
+                <input type="number" id="discount" name="discount" placeholder="Ingrese el descuento" min="0" max="100" step="1" required>
+            </div>
+
+            <div class="input-box">
+                <label for="category">Seleccione categoría:</label>
+                <select name="category" id="category" required>
+                    <option value="">Elegir</option>
+                    <option value="semillas">Semillas</option>
+                    <option value="insumos">Insumos</option>
+                    <option value="macetas">Macetas</option>
+                    <option value="herramientas">Herramientas</option>
+                    <option value="suculentas">Suculentas</option>
+                    <option value="interior">Interior</option>
+                    <option value="exterior">Exterior</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="image">Foto del producto:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+
+            <div class="input-box">
+                <label for="sale">¿Está en oferta?</label>
+                <input type="text" id="sale" name="sale" placeholder="Sí/No" required>
+            </div>
+
+            <button type="submit" class="btn">Guardar producto nuevo</button>
+        </form>
+    </div>
+</body>
+</html>

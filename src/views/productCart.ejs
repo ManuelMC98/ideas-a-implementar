@@ -1,0 +1,42 @@
+<%- include('partials/head', {styles : ['stylesProductCart']}) %>
+
+<body>
+    <%- include('partials/header') %>
+    <main class="cart">
+        <div class="copy-cart">Carrito de compras <i class="fas fa-times" id="close-cart"></i></div>
+
+        <% const products = [
+            { name: 'Alegria del hogar', price: 600, image: 'PE-Alegria_del_Hogar.png' },
+            { name: 'Azalea', price: 4500, image: 'PE-Azalea.png' },
+            { name: 'Calathea', price: 6300, image: 'PI-Calathea_Macoyana.png' }
+        ]; %>
+
+        <% products.forEach(product => { %>
+            <article>
+                <div class="product">
+                    <img src="/images/products/<%= product.image %>" alt="<%= product.name %>" class="cart-img">
+                    <div class="detail-product">
+                        <div class="cart-name"><%= product.name %></div>
+                        <div class="cart-price">$<%= product.price %></div>
+                        <input type="number" value="1" class="quantity">
+                    </div>
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </article>
+        <% }); %>
+
+        <div class="zip-code-calc">
+            <input class="zip-code" type="number" placeholder="Tu codigo postal">
+            <button class="zp-button">Calcular</button>
+        </div>
+        
+        <div class="total">
+            <h4 class="total-title">Total</h4>
+            <h4 class="total-price">$<%= products.reduce((total, product) => total + product.price, 0) %></h4>
+        </div>
+
+        <button class="buy-btn">Comprar</button>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

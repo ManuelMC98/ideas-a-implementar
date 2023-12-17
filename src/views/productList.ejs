@@ -1,0 +1,41 @@
+<%- include('partials/head', {styles: ['stylesINDEX']}) %>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <section>
+            <h3>Destacados del mes</h3>
+            <section class="bestsellers">
+                <% if (locals.products && locals.products.length > 0) { %>
+                    <% locals.products.forEach((product) => { %>
+                        <div class="products">
+                            <article>
+                                <img src="../images/products/<%= product.image %>" alt="imagen" class="product_img">
+                                <div class="main-article">
+                                    <h4 class="name"><%= product.name %></h4>
+                                    <p class="price">
+                                        <a href="/products/detail/<%= product.id %>">
+                                            <i class="fas fa-info-circle fa-lg"></i>
+                                        </a>
+                                        Desde $ <%= product.price %>
+                                        <i class="fas fa-cart-plus fa-lg"></i>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    <% }) %>
+                <% } else { %>
+                    <p>No hay productos destacados en este momento.</p>
+                <% } %>
+            </section>
+        </section>
+        <div class="crud-buttons">
+            <a href="/products/create">
+                <button type="submit" class="btn-products">Agregá un producto</button>
+            </a>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

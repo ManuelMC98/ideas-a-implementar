@@ -1,0 +1,41 @@
+<%- include('partials/head', {styles : ['styleProduct-detail']}) %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <section class="product">
+            <img class="product-img" src="/images/products/<%= locals.product.image %>" alt="<%= locals.product.name %>">
+            <div class="product-info">
+                <h2><%= locals.product.name %></h2>
+                <h3>Precio: $<%= locals.product.price %></h3>
+                <p>Aceptamos todos los medios de pago</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="far fa-money-bill-alt"></i>
+                </div>
+                <div class="location">
+                    <h4>Nos ubicamos en:</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 25 de mayo 1145</p>
+                </div>
+                <div class="description">
+                    <h4>Descripción</h4>
+                    <p><%= locals.product.description %></p>
+                </div>
+                <div class="product-gallery">
+                    <img class="product-imgSmall" src="/images/products/<%= locals.product.image %>" alt="<%= locals.product.name %>">
+                    <img class="product-imgSmall" src="/images/products/<%= locals.product.image %>" alt="<%= locals.product.name %>">
+                    <img class="product-imgSmall" src="/images/products/<%= locals.product.image %>" alt="<%= locals.product.name %>">
+                </div>
+                <button class="button-trolley"><i class="fas fa-plus"></i>Añadir al carrito</button>
+                <div class="crud-buttons">
+                    <button><a href="/products/<%= locals.product?.id %>/edit" class="action-button edit">Editar</a></button>
+                    <form action="/products/<%= locals.product?.id %>/delete?_method=DELETE" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este producto?')" style="display: inline-flex">
+                        <button type="submit" class="action-button delete">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

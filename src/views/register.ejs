@@ -1,0 +1,31 @@
+<%- include('partials/head', {styles : ['stylesLogin']}) %>
+<body>
+    <div class="logo-btn">
+        <img src="/images/Logo-verde.png" alt="Logo">
+    </div>
+    <div class="wrapper">
+        <form action="/users/register" method="POST" encType="multipart/form-data">
+            <h1>¡Regístrate!</h1>
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Nombre y apellido">
+                <i class='bx bx-user' style='color:#435334'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+                <i class='bx bx-user' style='color:#435334'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+                <i class='bx bx-envelope' style='color:#435334'></i>
+            </div>
+            <div class="input-box">
+                <input type="date" id="birth" name="birth_date" placeholder="Fecha de nacimiento">
+                <i class='bx bx-calendar' style='color:#435334'></i>
+            </div>
+            <!-- ... (rest of the form) ... -->
+            <button type="submit" class="btn" >Enviar</button>
+            <button type="reset" class="btn">Borrar</button>
+        </form>
+    </div>
+</body>
+</html>

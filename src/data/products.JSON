@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Alegria del hogar",
+    "description": "Planta de exterior",
+    "price": "600",
+    "discount": "10",
+    "category": "",
+    "image": "PE-Alegria_del_Hogar.png",
+    "sale": "in-sale"
+  },
+  {
+    "id": 2,
+    "name": "Azalea",
+    "description": "son los arbustos de flores del género Rhododendron",
+    "price": 4500,
+    "discount": 15,
+    "category": "Exterior",
+    "image": "PE-Azalea.png",
+    "sale": "no-sale"
+  },
+  {
+    "id": 3,
+    "name": "Mix de suculentas",
+    "description": " son aquellas en las que algún órgano está especializado en el almacenamiento de agua en cantidades mayores que las plantas sin esta adaptación..",
+    "price": 5000,
+    "discount": 5,
+    "category": "Exterior",
+    "image": "SU-Arreglo4.png",
+    "sale": "in-sale"
+  },
+  {
+    "id": 4,
+    "name": "Calathea Macoyana",
+    "description": " Calathea makoyana es una planta de hoja perenne que alcanza un tamaño de hasta 45 cm de altura",
+    "price": 6300,
+    "discount": 0,
+    "category": "Interior",
+    "image": "PI-Calathea_Macoyana.png",
+    "sale": "no-sale"
+  },
+  {
+    "id": 6,
+    "name": "Palo de agua",
+    "description": "Utensilio de jardinería para riego eficiente y controlado de plantas.",
+    "price": 5000,
+    "discount": 10,
+    "category": "Interior",
+    "image": "PI-Palo_Agua.png",
+    "sale": "no-sale"
+  },
+  {
+    "id": 7,
+    "name": "Maceta de cerámica",
+    "description": "Maceta de cerámica, esmaltada en tonos suaves, elegante y duradera",
+    "price": 3500,
+    "discount": 0,
+    "category": "Macetas",
+    "image": "MA-Ceramica_beige.png",
+    "sale": "in-sale"
+  },
+  {
+    "id": 9,
+    "name": "Kit para jardin ",
+    "description": "Kit de tres herramientas para el jardin pala,palita y rastillo",
+    "price": 7300,
+    "discount": 20,
+    "category": "Herramientas",
+    "image": "HE-Kit_jardin.png",
+    "sale": "in-sale"
+  },
+  {
+    "id": 10,
+    "name": "Semillas de girasol",
+    "description": "Las semillas para plantar girasoles son pequeñas, en forma de óvalo, de color negro o marrón oscuro. Tienen una cubierta dura que debe ablandarse antes de la siembra para facilitar la germinación",
+    "price": 1000,
+    "discount": 10,
+    "category": "Semillas",
+    "image": "SE-Girasol_multifloral.png",
+    "sale": "no-sale"
+  },
+  {
+    "id": 11,
+    "name": "Semillas de margarita",
+    "description": "son pequeñas y alargadas, generalmente de color marrón claro. Estas semillas se pueden encontrar en el centro de la cabeza de la margarita después de que ha florecido. ",
+    "price": 1000,
+    "discount": 50,
+    "category": "Semillas",
+    "image": "SE-Margarita.png",
+    "sale": "in-sale"
+  }
+]

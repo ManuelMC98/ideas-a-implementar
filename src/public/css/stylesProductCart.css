@@ -1,0 +1,121 @@
+main.cart{
+    background-color: #FAF1E4;
+}
+
+.copy-cart{
+    background-color: #9EB384;
+    color: #FAF1E4;
+    border-radius: 10px;
+    width: auto;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main.cart{
+    display: flex;
+    flex-direction: column;
+}
+
+img.cart-img{
+    width: 70%
+}
+
+article div.product{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    margin: 2px ;
+}
+
+div.detail-product{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.detail-product input.quantity{
+    margin-top: 5px;
+    padding: 3%;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+}
+i.fa-trash-alt{
+    display: flex;
+    justify-content: center;
+}
+
+div.zip-code-calc{
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+div.zip-code-calc input.zip-code{
+    width: 70%;
+    padding:  2%;
+    margin-left: 2%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    margin-bottom: 2%;
+}
+
+div.zip-code-calc button.zp-button{
+    width: 20%;
+    background-color: #9EB384;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    margin-bottom: 2%;
+}
+
+div.total{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+
+button.buy-btn{
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #9EB384;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (min-width: 769px) {
+    button.buy-btn {
+        width: 45%;
+        margin: 4%;
+
+        font-size: 20px;;
+
+    }
+
+    main.cart article div.product{
+            width: 45%;
+            margin: 1%;
+    }
+
+    div.zip-code-calc input.zip-code,
+    div.zip-code-calc button.zp-button{
+        width: 22%;
+        padding: 2%;
+    }
+
+    div.total{
+        width: 45%;
+        font-size: 20px;
+    }
+
+
+}
